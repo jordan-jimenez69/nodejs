@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="http://localhost:3000/css/navbar.css">
+    <link rel="stylesheet" href="http://localhost:3000/css/main.css">
+    <title>Document</title>
+  </head>
+<%- include('navbar') %>
+  <body>
+    <h1>Bienvenue sur ma boutique !</h1> <br><br>
+    <% livres.forEach(function(livre) { %>
+      <div class="livre">
+          <h2><%= livre.titre %></h2>
+          <img src="<%= livre.image %>">
+          <p>Auteur: <%= livre.auteur %></p>
+          <p>Prix: <%= livre.prix %> €</p>
+              <button type="submit">Acheter</button>
+        
+      </div>
+  <% }); %>
+
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="http://localhost:3000/css/navbar.css">
+    <link rel="stylesheet" href="http://localhost:3000/css/main.css">
+    <title>Document</title>
+  </head>
+  <%- include('include/navbar') %>
+  <body>
+    <h1>Books in the Shop</h1>
+    <ul>
+      <% livres.forEach(livre => { %>
+        <li><%= livre.titre %> - <%= livre.auteur %></li>
+      <% }); %>
+    </ul>
+  </body>
+</html>

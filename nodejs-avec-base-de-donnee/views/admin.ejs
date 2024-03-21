@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My E-commerce Application</title>
+  </head>
+  <%- include('include/navbar') %>
+    <body>
+        <h1>Ajouter un nouveau livre</h1>
+
+            <label for="titre">Titre:</label><br>
+            <input type="text" id="title" name="title" required><br><br>
+
+            <label for="auteur">Auteur:</label><br>
+            <input type="text" id="autor" name="autor" required><br><br>
+
+            <label for="prix">Prix:</label><br>
+            <input type="number" id="price" name="price" step="0.01" required><br><br>
+
+            <button type="submit">Ajouter livre</button>
+        </form>
+    </body>
+    </html>
