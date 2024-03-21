@@ -1,7 +1,4 @@
-Application Node.js 
-
-Nodemon  -  npm i -D nodemon
-
+Application Node.js avec nodemon, express, ejs et mysql
 
 A faire avant de lancer l'application :
 
@@ -11,5 +8,7 @@ A faire avant de lancer l'application :
 4 - npm i ejs
 5 - npm i mysql2
 
-Routes avec Express
-https://expressjs.com/ npm install espress
+Puis initialisation avec le fichier dbnodejs.sql a importer sur le localhost avec xampp.
+
+
+Vous pouvez lancer l'appli
