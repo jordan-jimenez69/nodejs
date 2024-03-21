@@ -1,16 +1,16 @@
-.livre img {
-    width: 40%;
+
+.book-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
 }
 
-.livres {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
+.book-item strong {
+    font-weight: bold;
 }
 
-.livre {
+.book-list {
     border: 1px solid #ddd; 
     padding: 20px; 
     display: flex;

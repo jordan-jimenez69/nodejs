@@ -9,11 +9,27 @@
   </head>
   <%- include('include/navbar') %>
   <body>
-    <h1>Books in the Shop</h1>
-    <ul>
-      <% livres.forEach(livre => { %>
-        <li><%= livre.titre %> - <%= livre.auteur %></li>
-      <% }); %>
+
+    <h1>Ajouter un nouveau livre</h1>
+
+    <form method="POST" action="/">
+      <input type="text" name="title">
+      <input type="text" name="author">
+      <input type="number" name="price">
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <h1 class="page-title">Liste des livres</h1>
+
+    <ul class="book-list">
+        <% livres.forEach(livre => { %>
+            <li class="book-item"> 
+                <strong>Titre:</strong> <%= livre.title %><br>
+                <strong>Auteur:</strong> <%= livre.author %><br>
+                <strong>Prix:</strong> <%= livre.price %>
+            </li>
+        <% }); %>
     </ul>
+</div>
   </body>
 </html>
